@@ -36,6 +36,15 @@
   language: julia
   date: January 1, 1970
 
+- title: Linear Algebra
+  repository: HereAround/MartinsOscarTutorials.jl
+  branch: master
+  filename: LinearAlgebraInOSCAR
+  author: Martin Bies
+  thumbnail: LinearAlgebra.png
+  language: julia
+  date: January 1, 1970
+
 
 
 # Tutorials hosted at https://github.com/HechtiDerLachs/OscarTutorials
