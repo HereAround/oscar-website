@@ -89,14 +89,14 @@ If you are using BibTeX, you can use the following BibTeX entries:
   organization = {The OSCAR Team},
   title        = {OSCAR -- Open Source Computer Algebra Research system,
                   Version 1.0.0},
-  year         = {2024},
+  year         = {2025},
   url          = {https://www.oscar-system.org},
   }
 
 @book{OSCAR-book,
   editor = {Decker, Wolfram and Eder, Christian and Fieker, Claus and Horn, Max and Joswig, Michael},
   title = {The {C}omputer {A}lgebra {S}ystem {OSCAR}: {A}lgorithms and {E}xamples},
-  year = {2024},
+  year = {2025},
   publisher = {Springer},
   series = {Algorithms and {C}omputation in {M}athematics},
   volume = {32},
