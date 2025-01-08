@@ -37,10 +37,10 @@
   date: January 1, 1970
 
 - title: Linear Algebra
-  repository: HereAround/MartinsOscarTutorials.jl
+  repository: oscar-system/OSCARBinder
   branch: master
   filename: LinearAlgebraInOSCAR
-  author: Martin Bies
+  author: Martin Bies, Aaruni Kaushik
   thumbnail: LinearAlgebra.png
   language: julia
   date: January 1, 1970
