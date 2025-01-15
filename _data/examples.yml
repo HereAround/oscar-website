@@ -36,12 +36,12 @@
   language: julia
   date: January 1, 1970
 
-- title: Linear Algebra
-  repository: oscar-system/OSCARBinder
+- title: F-Theory Tools -- Advanced Functionality
+  repository: HereAround/MartinsOscarTutorials.jl
   branch: master
-  filename: LinearAlgebraInOSCAR
-  author: Martin Bies, Aaruni Kaushik
-  thumbnail: LinearAlgebra.png
+  filename: FTheoryToolsPaper
+  author: Martin Bies, Andrew P. Turner, Mikelis E. Mikelson
+  thumbnail: FTheoryTools.png
   language: julia
   date: January 1, 1970
 
@@ -133,6 +133,12 @@
   language: julia
   date: January 1, 1970
 
+- title: Linear Algebra
+  repository: oscar-system/OSCARBinder
+  branch: master
+  filename: LinearAlgebraInOSCAR
+  author: Martin Bies, Aaruni Kaushik
+  thumbnail: LinearAlgebra.png
 
 #- title: "Homology of VR complexes"
 #  repository: oscar-system/OSCARBinder
