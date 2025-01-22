@@ -1,63 +1,59 @@
 <div class="sidebar">
   <div class="container">
     <div class="sidebar-about">
-        <a href="{{ site.baseurl }}/">
-          <img class="sidebar-image" src="{{ site.baseurl }}/public/OSCAR_logo.png" alt="OSCAR Symolic Tools"/>
-        </a>
-      <p class="lead">The OSCAR project</p>
+      <a href="{{ site.baseurl }}/">
+        <img class="sidebar-image" src="{{ site.baseurl }}/public/OSCAR_logo.png" alt="OSCAR Symbolic Tools" />
+      </a>
+      <p class="lead">The OSCAR Project</p>
       <hr>
     </div>
 
     <nav class="sidebar-nav">
+      {% for item in site.data.sidebar %}
+        <div class="sidebar-nav-item{% if page.url == item.url %} active{% endif %}">
+          <a 
+            href="{{ site.baseurl }}{{ item.url }}" 
+            class="sidebar-nav-link {% if item.submenu %}has-submenu{% endif %}"
+            data-toggle="collapse" 
+            data-target="#submenu-{{ forloop.index }}"
 
-      <a class="sidebar-nav-item{% if page.url == '/' %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
-
-      <a class="sidebar-nav-item{% if page.url == '/about/' %} active{% endif %}" href="{{ site.baseurl }}/about/">About</a>
-
-      <a class="sidebar-nav-item{% if page.url == '/news/' %} active{% endif %}" href="{{ site.baseurl }}/news/">News</a>
-
-      <a class="sidebar-nav-item{% if page.url == '/install/' %} active{% endif %}" href="{{ site.baseurl }}/install/">Installation</a>
-      
-      <a class="sidebar-nav-item{% if page.url contains '/tutorials/' %} active{% endif %}" href="{{ site.baseurl }}/tutorials/">Tutorials</a>
-
-      <a class="sidebar-nav-item{% if page.url == '/documentation/' %} active{% endif %}" href="{{ site.baseurl }}/documentation/">Documentation</a>
-
-      <a class="sidebar-nav-item{% if page.url == '/community/' %} active{% endif %}" href="{{ site.baseurl }}/community/">Community</a>
-
-      <a class="sidebar-nav-item{% if page.url == '/talks/' %} active{% endif %}" href="{{ site.baseurl }}/talks/">Talks</a>
-
-      <a class="sidebar-nav-item{% if page.meeting %} active{% endif %}" href="{{ site.baseurl }}/meetings/">Meetings</a>
-
-      <a class="sidebar-nav-item{% if page.url == '/credits/' %} active{% endif %}" href="{{ site.baseurl }}/credits">Credits</a>
-
-      <a class="sidebar-nav-item{% if page.url == '/contributors/' %} active{% endif %}" href="{{ site.baseurl }}/contributors">Contributors</a>
-
-      <a class="sidebar-nav-item" href="https://book.oscar-system.org/">The OSCAR book</a>
-      
-      <a class="sidebar-nav-item" href="https://github.com/oscar-system/Oscar.jl/">Oscar.jl on Github</a>
-
-      <a class="sidebar-nav-item{% if page.url == '/mardi/' %} active{% endif %}" href="{{ site.baseurl }}/mardi">MaRDI</a>
-
-      <!-- {% comment %}
-        The code below dynamically generates a sidebar nav of pages with
-        `layout: page` in the front-matter. See readme for usage.
-      {% endcomment %}
-
-      {% assign pages_list = site.pages | sort:"name" %}
-      {% for node in pages_list %}
-        {% if node.title != null %}
-          {% if node.notinsidebar == null %}
-            {% if node.layout == "page" or node.layout == "tutorials" %}
-              <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}/{{ node.url }}">{{ node.title }}</a>
-              <p/>
-            {% endif %}
+          >
+            {{ item.title }}
+          </a>
+          {% if item.submenu %}
+            <ul 
+              class="collapse{% if page.url contains item.url %} show{% endif %}" 
+              id="submenu-{{ forloop.index }}"
+            >
+              {% for subitem in item.submenu %}
+                <li class="{% if page.url == subitem.url %}active{% endif %}">
+                  <a href="{{ site.baseurl }}{{ subitem.url }}">{{ subitem.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
           {% endif %}
-        {% endif %}
-      {% endfor %} -->
-      <div class="mobile-hidden">
-        <hr>
-        {%include footer.html %}
-      </div>
+        </div>
+      {% endfor %}
     </nav>
+
+    <div class="mobile-hidden">
+      <hr>
+      {% include footer.html %}
+    </div>
   </div>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggles = document.querySelectorAll('.sidebar-nav-link.has-submenu');
+    toggles.forEach(toggle => {
+      toggle.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('data-target'));
+        if (target) {
+          e.preventDefault();
+          target.classList.toggle('show');
+        }
+      });
+    });
+  });
+</script>
