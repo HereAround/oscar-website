@@ -11,8 +11,8 @@
     <nav class="sidebar-nav">
       {% for item in site.data.sidebar %}
         <div class="sidebar-nav-item{% if page.url == item.url %} active{% endif %}">
-          <a 
-            href="{{ site.baseurl }}{{ item.url }}" 
+          <a
+            href="{% if item.url contains 'http' %}{{ item.url }}{% else %}{{ site.baseurl }}{{ item.url }}{% endif %}"
             class="sidebar-nav-link {% if item.submenu %}has-submenu{% endif %}"
             data-toggle="collapse" 
             data-target="#submenu-{{ forloop.index }}"
@@ -27,7 +27,7 @@
             >
               {% for subitem in item.submenu %}
                 <li class="{% if page.url == subitem.url %}active{% endif %}">
-                  <a href="{{ site.baseurl }}{{ subitem.url }}">{{ subitem.title }}</a>
+                  <a href="{% if subitem.url contains 'http' %}{{ subitem.url }}{% else %}{{ site.baseurl }}{{ subitem.url }}{% endif %}">{{ subitem.title }}</a>
                 </li>
               {% endfor %}
             </ul>
