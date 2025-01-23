@@ -63,12 +63,18 @@ html {
   display: block;
 }
 
-.sidebar-nav-link.has-submenu::after {
-  content: " ▼"; /* Add a dropdown indicator */
-  font-size: 0.8em;
+button.collapser {
+  visibility: hidden;
+  padding: 0;
+  border-width: 0;
 }
 
-.sidebar-nav-link.has-submenu.active::after {
+button.collapser::after {
+  visibility: visible;
+  content: " ▼"; /* Add a dropdown indicator */
+}
+
+button.collapser.active::after {
   content: " ▲"; /* Change indicator when submenu is open */
 }
 
