@@ -4,13 +4,42 @@ title: OSCAR Meetings
 meeting: true
 ---
 
-<ol reversed>
-    {% assign pages_list = site.pages | where: "is_meeting_index", "true" | sort: "meeting_nr" %}
-    {% for node in pages_list reversed %}
-        {% if node.title != null %}
-            <li><a href="{{ node.url  | relative_url }}">{{ node.title }}</a></li>
-        {% endif %}
-    {% endfor %}
-</ol>
+## Upcoming Meetings
 
-For more OSCAR-related meetings, please also take a look at the [meetings of the SFB - TRR 195](https://www.computeralgebra.de/sfb/events/).
+{% assign events = site.data.events | where: "satellite", "No" | group-by: "start-date" | sort: "end-date" | reverse %}
+{% assign today = "now" | date: "%Y-%m-%d" %}
+{% assign has_upcoming_events = false %}
+
+<ul>
+{% for event in events %}
+  {% if event.end-date >= today %}
+    {% assign has_upcoming_events = true %}
+    <li>
+      <strong>{{ event.title }}</strong><br>
+      <em>{{ event.start-date }} – {{ event.end-date }}</em><br>
+      Location: {{ event.location }}<br>
+      <a href="{{ event.website }}" target="_blank">More information</a>
+    </li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+{% unless has_upcoming_events %}
+Currently no upcoming events.
+{% endunless %}
+
+
+## Past Meetings
+
+<ul>
+{% for event in events %}
+  {% if event.end-date < today %}
+    <li>
+      <strong>{{ event.title }}</strong><br>
+      <em>{{ event.start-date }} – {{ event.end-date }}</em><br>
+      Location: {{ event.location }}<br>
+      <a href="{{ event.website }}" target="_blank">More information</a>
+    </li>
+  {% endif %}
+{% endfor %}
+</ul>
