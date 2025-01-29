@@ -13,7 +13,7 @@ title: Home
 
 ## Upcoming events
 
-{% assign sorted_conferences = site.data.conferences | group-by: "start-date" | sort: "end-date" %}
+{% assign sorted_conferences = site.data.events | group-by: "start-date" | sort: "end-date" %}
 {% assign today = "now" | date: "%Y-%m-%d" %}
 {% assign has_upcoming_events = false %}
 
