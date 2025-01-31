@@ -15,15 +15,6 @@
       url: "/getting-started/documentation/"
     - title: "To be sorted"
       url: "/getting-started/to-be-sorted/"
-- title: "Events"
-  url: "/events/"
-  submenu:
-    - title: "OSCAR Events"
-      url: "/events/oscar-events/"
-    - title: "Satellite Events"
-      url: "/events/satellite-events/"
-    - title: "Talks"
-      url: "/events/talks/"
 - title: "Getting in touch"
   url: "/getting-in-touch/"
   submenu:
@@ -33,6 +24,15 @@
       url: "/getting-in-touch/reporting-issues/"
     - title: "Contributing"
       url: "/getting-in-touch/contributing/"
+- title: "Events"
+  url: "/events/"
+  submenu:
+    - title: "OSCAR Events"
+      url: "/events/oscar-events/"
+    - title: "Satellite Events"
+      url: "/events/satellite-events/"
+    - title: "Talks"
+      url: "/events/talks/"
 - title: "Credits & Citations"
   url: "/credits-and-citations/"
   submenu:
