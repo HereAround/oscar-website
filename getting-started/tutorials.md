@@ -125,17 +125,6 @@ Click on one of the links below to filter notebooks (and re-click to disable fil
 </details>
 <span class="date">Last updated on {{ site.time | date: '%d-%m-%Y' }}</span>
 
-
-## How to contribute Tutorials
-
-1. Create a jupyter notebook with the desired content.
-2. Place this notebook in a github repository of your choice.
-3. Send the link to this jupyter notebook to [Martin Bies](https://martinbies.github.io/).
-
-Note that **tutorial authors are expected to maintain their tutorial(s)**, so that their
-tutorial notebooks function with the latest stable OSCAR release.
-
-
 ## Looking for more/other Notebook?
 
   - [polymake examples](https://github.com/micjoswig/oscar-notebooks)
