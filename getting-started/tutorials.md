@@ -39,9 +39,6 @@ Alternatively, you can inspect the jupyter notebook directly on <a href="https:/
 
 <br/>
 
-
-## OSCAR Tutorials
-
 Click on one of the links below to filter notebooks (and re-click to disable filtering).
 
 <div class="example_box">
@@ -124,8 +121,3 @@ Click on one of the links below to filter notebooks (and re-click to disable fil
 </div>
 </details>
 <span class="date">Last updated on {{ site.time | date: '%d-%m-%Y' }}</span>
-
-## Looking for more/other Notebook?
-
-  - [polymake examples](https://github.com/micjoswig/oscar-notebooks)
-  - [Hecke examples](https://github.com/thofma/HeckeTutorials.jl)
