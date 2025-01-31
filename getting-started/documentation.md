@@ -38,15 +38,13 @@ docs:
 
 ---
 
-## OSCAR Documentation
-
 <div class="message message-big">
 <a href="https://docs.oscar-system.org/stable/">Click here for the latest OSCAR manual.</a>
 </div>
 Expert users may also wish to use the [manual for the latest development version](https://docs.oscar-system.org/dev/).
 
 
-## OSCAR Book
+### OSCAR Book
 
 Looking for more? The [OSCAR Book](https://book.oscar-system.org/) offers deeper insights into *OSCAR* beyond the standard documentation.
 
