@@ -81,10 +81,6 @@ html {
   padding-left: 40px; /* Indentation for submenu items */
 }
 
-.submenu li {
-  padding: 5px 0;
-}
-
 .sidebar-nav-item {
   display: flex;
   align-items: center;
@@ -114,16 +110,13 @@ button.collapser.active::after {
   content: " ▲"; /* Change indicator when submenu is open */
 }
 
-
-/* General Sidebar Styling */
 .sidebar {
   text-align: center;
   padding: 0.7rem 0.7rem;
-  color: rgb(0, 0, 0);
+  color: rgb(0,0,0);
   background-color: #202020;
   overflow: auto;
 }
-
 @media (min-width: 48em) {
   .sidebar {
     position: fixed;
@@ -135,7 +128,7 @@ button.collapser.active::after {
   }
 }
 
-/* Sidebar Links */
+/* Sidebar links */
 .sidebar a {
   color: #000000;
   margin-bottom: 3px;
@@ -147,7 +140,7 @@ button.collapser.active::after {
   text-decoration: underline;
 }
 
-/* About Section */
+/* About section */
 .sidebar-about h1 {
   color: #000000;
   margin-top: 0;
@@ -155,27 +148,61 @@ button.collapser.active::after {
   font-size: 2.25rem;
 }
 
-/* Sidebar Navigation */
+/* Sidebar nav */
 .sidebar-nav {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
-
 .sidebar-nav-item {
   display: block;
-  margin-bottom: 0.2rem;
+}
+
+.inner-sidebar-nav-item {
+  display: block;
+  margin-left: 6px;
+}
+.sidebar-nav-item-inner.active {
+  font-weight: bold;
 }
 
 .sidebar-nav-item > a {
   color: #000;
 }
 
-/* Submenu Styling */
+.inner-sidebar-nav-item-two {
+  margin-left: 12px;
+  display: block;
+}
+
 .sidebar-submenu {
   list-style: none;
   padding: 0;
-  margin: 0 0 0 1rem; /* Indent for submenus */
 }
 
+
+@media (max-width: 48em) {
+  .sidebar-nav-item {
+    display: inline;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  .inner-sidebar-nav-item {
+    display: inline;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .sidebar-nav-item-inner.active {
+    font-weight: inline;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  .inner-sidebar-nav-item-two {
+    display: inline;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+}
 .sidebar-submenu li {
   margin-bottom: 0.0rem;
 }
@@ -185,10 +212,46 @@ button.collapser.active::after {
   color: #666;
   text-decoration: none;
 }
-
+a.inner-sidebar-nav-item:hover,
+a.inner-sidebar-nav-item:focus {
+  text-decoration: underline;
+}
 .sidebar-submenu a:hover,
 .sidebar-submenu a:focus {
   text-decoration: underline;
+}
+.inner-sidebar-nav-item.active {
+  font-weight: bold;
+}
+
+a.inner-sidebar-nav-item-two:hover,
+a.inner-sidebar-nav-item-two:focus {
+  text-decoration: underline;
+}
+.sidebar-nav-item.minor {
+  color: rgb(0,0,0);
+  font-size: 60%;
+}
+.inner-sidebar-nav-item-two.active {
+  font-weight: bold;
+}
+
+.sidebar-submenu .active > a {
+  font-weight: bold;
+  color: #000;
+}
+
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  text-decoration: underline;
+}
+.sidebar-nav-item.active {
+  font-weight: bold;
+}
+
+li.active > a {
+  font-weight: bold;
+  color: #000;
 }
 
 .sidebar-nav-item.minor {
@@ -201,30 +264,7 @@ button.collapser.active::after {
   color: #000;
 }
 
-/* Active State Styling */
-
-li.active > a {
-  font-weight: bold;
-  color: #000;
-}
-
-.sidebar-submenu .active > a {
-  font-weight: bold;
-  color: #000;
-}
-
-/* Mobile-Specific Adjustments */
 @media (max-width: 48em) {
-  .sidebar-nav-item {
-    display: inline;
-    margin-left: 4px;
-    margin-right: 4px;
-  }
-
-  .sidebar-submenu {
-    margin-left: 4px;
-  }
-
   .mobile-hidden {
     display: none;
   }
