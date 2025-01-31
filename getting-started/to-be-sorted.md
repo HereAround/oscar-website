@@ -5,8 +5,7 @@ title: To be sorted
 
 ### Getting a GAP prompt
 
-If you are a GAP user and have installed loaded OSCAR in a Julia session as
-described above, you can at any time switch back and forth between the Julia prompt
+If you are a GAP user and have started OSCAR in a Julia session, you can at any time switch back and forth between the Julia prompt
 and a GAP prompt, by using the command `GAP.prompt()`:
 
 <pre>
@@ -22,5 +21,4 @@ Sym( [ 1 .. 3 ] )
 
 <span style="color: green">julia></span> GAP.Globals.G
 GAP: Sym( [ 1 .. 3 ] )
-
 </pre>
