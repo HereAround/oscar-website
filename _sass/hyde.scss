@@ -53,6 +53,42 @@ html {
  * out above content in mobile and later moves to the side with wider viewports.
  */
 
+.collapsible {
+  display: inline-block;
+  align-items: center;
+  cursor: pointer; /* Make it look clickable */
+}
+
+.collapsible-toggle {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 12px; /* Add some space between the link text and the icon */
+  cursor: pointer; /* Make it look clickable */
+}
+
+.collapsible-title {
+  display: inline-block;
+  transition: transform 0.2s ease-in-out; /* Smooth rotation for the icon */
+}
+
+.collapsible[open] .collapsible-title {
+  transform: rotate(180deg);
+}
+
+.submenu {
+  list-style: none;
+  margin: 0;
+  padding-left: 40px; /* Indentation for submenu items */
+}
+
+.submenu li {
+  padding: 5px 0;
+}
+
+.sidebar-nav-item {
+  display: flex;
+  align-items: center;
+}
 
  .collapse {
   display: none;
@@ -168,11 +204,6 @@ button.collapser.active::after {
 /* Active State Styling */
 
 li.active > a {
-  font-weight: bold;
-  color: #000;
-}
-
-.sidebar-nav-item.active > a {
   font-weight: bold;
   color: #000;
 }
