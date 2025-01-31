@@ -153,7 +153,7 @@ julia> using Oscar
 julia>
 ```
 
-## Using IJulia for notebooks
+## Step 4: Using IJulia to run Tutorials
 
 IJulia can be installed by following its
 [installation page](https://julialang.github.io/IJulia.jl/stable/manual/installation/).
