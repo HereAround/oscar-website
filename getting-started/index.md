@@ -3,30 +3,37 @@ layout: page
 title: Getting Started with OSCAR
 ---
 
-To get started with *OSCAR*, follow these three key steps:
-
 <div style="text-align: center;">
-  <svg width="360" height="300" viewBox="0 0 360 300">
+  <svg width="360" height="370" viewBox="0 0 360 370">
     
-    <!-- Buttons inside the triangle, now larger and uniform in size -->
-    <a xlink:href="{{site.baseurl }}/getting-started/install/">
-      <rect x="110" y="10" width="140" height="60" rx="15" ry="15" fill="#4472C4"/>
-      <text x="180" y="45" font-size="20" text-anchor="middle" fill="white" font-weight="bold">Installation</text>
-    </a>
+    <!-- Installation Box -->
+    <rect x="110" y="0" width="140" height="170" rx="15" ry="15" fill="#4472C4"/>
+    <text x="180" y="25" font-size="20" text-anchor="middle" fill="white" font-weight="bold">Installation</text>
 
+    <!-- Bullet point list inside the box, with larger text -->
+    <text x="180" y="30" font-size="18" text-anchor="middle" fill="white">
+      <tspan x="180" dy="1.4em">• <a href="{{site.baseurl }}/getting-started/install-win" style="fill:white;">Windows</a></tspan>
+      <tspan x="180" dy="1.4em">• <a href="{{site.baseurl }}/getting-started/install-mac" style="fill:white;">MacOS</a></tspan>
+      <tspan x="180" dy="1.4em">• <a href="{{site.baseurl }}/getting-started/install-ubuntu-debian" style="fill:white;">Ubuntu/Debian</a></tspan>
+      <tspan x="180" dy="1.4em">• <a href="{{site.baseurl }}/getting-started/install-fedora" style="fill:white;">Fedora</a></tspan>
+      <tspan x="180" dy="1.4em">• <a href="{{site.baseurl }}/getting-started/install-other" style="fill:white;">Other</a></tspan>
+    </text>
+
+    <!-- Documentation Button -->
     <a xlink:href="{{site.baseurl }}/getting-started/documentation/">
-      <rect x="0" y="210" width="140" height="60" rx="15" ry="15" fill="#70AD47"/>
-      <text x="70" y="245" font-size="20" text-anchor="middle" fill="white" font-weight="bold">Documentation</text>
+      <rect x="0" y="310" width="140" height="60" rx="15" ry="15" fill="#70AD47"/>
+      <text x="70" y="345" font-size="20" text-anchor="middle" fill="white" font-weight="bold">Documentation</text>
     </a>
 
+    <!-- Tutorials Button -->
     <a xlink:href="{{site.baseurl }}/getting-started/tutorials/">
-      <rect x="220" y="210" width="140" height="60" rx="15" ry="15" fill="#ED7D31"/>
-      <text x="290" y="245" font-size="20" text-anchor="middle" fill="white" font-weight="bold">Tutorials</text>
+      <rect x="220" y="310" width="140" height="60" rx="15" ry="15" fill="#ED7D31"/>
+      <text x="290" y="345" font-size="20" text-anchor="middle" fill="white" font-weight="bold">Tutorials</text>
     </a>
 
     <!-- Arrows indicating direction -->
-    <line x1="180" y1="70" x2="70" y2="200" stroke="#aaa" stroke-width="3" marker-end="url(#arrow)"/>
-    <line x1="180" y1="70" x2="290" y2="200" stroke="#aaa" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="180" y1="175" x2="70" y2="305" stroke="#aaa" stroke-width="3" marker-end="url(#arrow)"/>
+    <line x1="180" y1="175" x2="290" y2="305" stroke="#aaa" stroke-width="3" marker-end="url(#arrow)"/>
     
     <defs>
       <marker id="arrow" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto">
