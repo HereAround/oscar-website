@@ -10,26 +10,34 @@
 
     <nav class="sidebar-nav">
       {% for item in site.data.sidebar %}
+        {% assign submenu_active = false %}
+        {% for subitem in item.submenu %}
+          {% if page.url == subitem.url %}
+            {% assign submenu_active = true %}
+          {% endif %}
+        {% endfor %}
+
         <div class="sidebar-nav-item {% if page.url == item.url %}active{% endif %}">
-        <details class="collapsible">
-          <summary class="collapsible-toggle">
-            <a href="{{ site.baseurl}}{{ item.url }}" class="sidebar-nav-link">
-              {{ item.title }}
-            </a>
-            {% if item.submenu %}
-              <span class="arrow">▼</span>
-            {% endif %}
-          </summary>
-          <ul class="submenu">
-            {% for subitem in item.submenu %}
-              <li class="{% if page.url == subitem.url %}active{% endif %}">
-                <a href="{% if subitem.url contains 'http' %}{{ subitem.url }}{% else %}{{ site.baseurl }}{{ subitem.url }}{% endif %}" {%if subitem.url contains 'http'%}target="_blank"{%endif%}>
-                  {{ subitem.title }}
-                </a>
-              </li>
-            {% endfor %}
-          </ul>
-        </details>
+          <details class="collapsible" {% if submenu_active %}open{% endif %}>
+            <summary class="collapsible-toggle">
+              <a href="{{ site.baseurl}}{{ item.url }}" class="sidebar-nav-link">
+                {{ item.title }}
+              </a>
+              {% if item.submenu %}
+                <span class="arrow">▼</span>
+              {% endif %}
+            </summary>
+
+            <ul class="submenu">
+              {% for subitem in item.submenu %}
+                <li class="{% if page.url == subitem.url %}active{% endif %}">
+                  <a href="{% if subitem.url contains 'http' %}{{ subitem.url }}{% else %}{{ site.baseurl }}{{ subitem.url }}{% endif %}" {% if subitem.url contains 'http' %}target="_blank"{% endif %}>
+                    {{ subitem.title }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </details>
         </div>
       {% endfor %}
     </nav>
