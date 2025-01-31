@@ -1,6 +1,6 @@
 ---
 layout: page
-title: How to cite OSCAR
+title: Citing OSCAR
 ---
 
 If you have used OSCAR in the preparation of a paper please cite it as described below:

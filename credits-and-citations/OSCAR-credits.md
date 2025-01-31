@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Work citing OSCAR
+title: Publications citing OSCAR
 
 citations:
     - name: On birational automorphisms of double EPW-cubes
