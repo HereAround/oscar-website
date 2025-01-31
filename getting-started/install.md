@@ -153,15 +153,6 @@ julia> using Oscar
 julia>
 ```
 
-Please have a look at
-
-  - [tutorials](https://www.oscar-system.org/tutorials/)
-  - [polymake examples](https://github.com/micjoswig/oscar-notebooks)
-  - [Hecke examples](https://github.com/thofma/HeckeTutorials.jl)
-
-for some examples (as [Jupyter](https://jupyter.org/) notebooks).
-
-
 ## Using IJulia for notebooks
 
 IJulia can be installed by following its
