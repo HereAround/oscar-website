@@ -5,7 +5,7 @@ title: Contributing to OSCAR
 
 We welcome contributions!
 
-All OSCAR project software is available on [GitHub](https://github.com/oscar-system). We recommend [reaching out to us]({{site.baseurl }}/getting-in-touch/getting-help) beforehand to avoid duplicate efforts and discuss design decisions - we are happy to help.
+All OSCAR project software is available on [GitHub](https://github.com/oscar-system). We recommend [reaching out to us]({{site.baseurl }}/contact-and-support) beforehand to avoid duplicate efforts and discuss design decisions - we are happy to help.
 
 
 ## Contributing Tutorials
