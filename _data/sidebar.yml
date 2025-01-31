@@ -13,6 +13,8 @@
       url: "/getting-started/tutorials/"
     - title: "Documentation"
       url: "/getting-started/documentation/"
+    - title: "To be sorted"
+      url: "/getting-started/to-be-sorted/"
 - title: "Events"
   url: "/events/"
   submenu:
