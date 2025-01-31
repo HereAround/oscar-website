@@ -48,7 +48,7 @@ Expert users may also wish to use the [manual for the latest development version
 
 ## OSCAR Book
 
-Looking for more? The [OSCAR Book](https://www.oscar-book.org/) offers deeper insights into *OSCAR* beyond the standard documentation.
+Looking for more? The [OSCAR Book](https://book.oscar-system.org/) offers deeper insights into *OSCAR* beyond the standard documentation.
 
 
 ### Additional Documentation
