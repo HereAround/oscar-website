@@ -53,27 +53,35 @@ html {
  * out above content in mobile and later moves to the side with wider viewports.
  */
 
-.collapsible {
-  display: inline-block;
-  align-items: center;
-  cursor: pointer; /* Make it look clickable */
+
+ summary.nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
 }
 
-.collapsible-toggle {
-  display: inline-flex;
-  align-items: center;
-  margin-left: 12px; /* Add some space between the link text and the icon */
-  cursor: pointer; /* Make it look clickable */
+summary.nav::after {
+  content: '';
+  width: 0; 
+  height: 0; 
+  border-top: 10px solid #15171b;
+  border-inline: 7px solid transparent;
+  transition: 0.2s;
+  cursor: pointer;
+  margin: auto 0;
 }
 
-.collapsible-title {
-  display: inline-block;
-  transition: transform 0.2s ease-in-out; /* Smooth rotation for the icon */
+details[open] > summary.nav::after {
+  transform: rotate(-180deg);
 }
 
-.collapsible[open] .collapsible-title {
-  transform: rotate(180deg);
+summary.nav::-webkit-details-marker {
+  display: none;
 }
+
+
+ // changes above here
 
 .submenu {
   list-style: none;

@@ -10,22 +10,13 @@
 
     <nav class="sidebar-nav">
       {% for item in site.data.sidebar %}
-        {% assign submenu_active = false %}
-        {% for subitem in item.submenu %}
-          {% if page.url == subitem.url %}
-            {% assign submenu_active = true %}
-          {% endif %}
-        {% endfor %}
-
+        {% if item.submenu %}
         <div class="sidebar-nav-item {% if page.url == item.url %}active{% endif %}">
-          <details class="collapsible" {% if submenu_active %}open{% endif %}>
-            <summary class="collapsible-toggle">
+          <details {% if page.url contains item.url %}open{% endif %}>
+            <summary class="nav">
               <a href="{{ site.baseurl}}{{ item.url }}" class="sidebar-nav-link">
                 {{ item.title }}
               </a>
-              {% if item.submenu %}
-                <span class="arrow">▼</span>
-              {% endif %}
             </summary>
 
             <ul class="submenu">
@@ -39,6 +30,13 @@
             </ul>
           </details>
         </div>
+          {% else %}
+          <div class="sidebar-nav-item {% if page.url == item.url %}active{% endif %}">
+          <a href="{{ site.baseurl}}{{ item.url }}" class="sidebar-nav-link">
+            {{ item.title }}
+          </a>
+        </div>
+          {% endif %}
       {% endfor %}
     </nav>
 
