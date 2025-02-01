@@ -62,15 +62,15 @@ julia> using Oscar
 
 ## Step 5: Running Tutorials Locally with IJulia
 
-To run tutorials locally, you will need to install the *IJulia* package:
-
-1. Install *IJulia* (and jupyter) by issuing the following command in your Julia REPL:
+1. Install *IJulia* (and jupyter) by running the following command inside your Julia REPL:
 ```julia
 using Pkg; Pkg.add("IJulia")
 ```
-For more information, visit the [installation guide](https://julialang.github.io/IJulia.jl/stable/manual/installation/).
-2. In some cases, you may need to explicitly build *IJulia*; for troubleshooting, refer to the [IJulia troubleshooting page](https://julialang.github.io/IJulia.jl/stable/manual/troubleshooting/).
-
-Additionally, to view tutorials in the browser, you need a browser installed in WSL. *Ubuntu* installs browsers via Snap, but Snap is disabled in WSL. To install a browser like Firefox, follow the instructions [here](https://www.omgubuntu.co.uk/2022/04/how-to-install-firefox-deb-apt-ubuntu-22-04).
-
-Finally, if you open a tutorial notebook (stored as a `.ipynb` file) and encounter a "Kernel error" due to an older Julia version, you can resolve this by selecting a different Julia kernel from the notebook's kernel menu.
+For more details, refer to the [installation guide](https://julialang.github.io/IJulia.jl/stable/manual/installation/). If you encounter issues, you may need to explicitly build IJulia. Troubleshooting info can be found on the [IJulia troubleshooting page](https://julialang.github.io/IJulia.jl/stable/manual/troubleshooting/).
+2. To run tutorial Jupyter notebooks locally, you will need a browser installed in WSL. Ubuntu installs browsers via Snap, but Snap is disabled in WSL. To install a browser (e.g., Firefox), follow these [instructions](https://www.omgubuntu.co.uk/2022/04/how-to-install-firefox-deb-apt-ubuntu-22-04).
+3. Download the tutorial of your interested from the [list of available OSCAR tutorials]({{site.baseurl }}/getting-started/tutorials).
+4. Start Jupyter by running the following in your Julia REPL:
+```julia
+using IJulia; notebook()
+```
+5. Your web browser should open with the Jupyter interface, where "Jupyter" is displayed in the upper-left corner, and a file explorer appears below. Locate and open the tutorial notebook of your interest. <br>You might see a pop-up with the message "Kernel not found" or "Kernel error". You can resolve this by selecting a different Julia kernel from the notebook's kernel menu.
