@@ -159,7 +159,7 @@ details.spoiler summary::after {
   margin-bottom:1em;
 }
 
-details[open] summary::after {
+details.spoiler [open] summary::after {
   display: none;
 }
 
