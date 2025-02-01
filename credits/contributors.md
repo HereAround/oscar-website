@@ -26,8 +26,7 @@ title: Contributors
 
 ## Contributors
 
-The following people are actively[^1] contributing to the OSCAR project.
-
+These individuals have contributed source code to the OSCAR project in the past 12 months (as of {{ 'now' | date: "%d %b %Y" }}).
 
 <ul>
 {% for p in site.data.people_list %}
@@ -63,10 +62,7 @@ The following people are actively[^1] contributing to the OSCAR project.
 
 ## Former Contributors
 
-The following people did contribute to the OSCAR project in the past, but have
-not contributed code changes in the past 12 months[^1].
-
-[^1]: This list was last updated on {{ 'now' | date: "%d %b %Y" }}.
+The following individuals contributed to the OSCAR project in the past but have not in the last 12 months (as of {{ 'now' | date: "%d %b %Y" }}).
 
 <ul>
 {% for p in site.data.people_list %}
