@@ -38,7 +38,7 @@ If you are using macOS 10.12 or newer, you need to install the Xcode command lin
 
 1. *OSCAR* requires [Julia](https://julialang.org) 1.6.0 or higher. We recommend using the latest stable release of Julia.
 2. We suggest installing Julia via [juliaup](https://github.com/JuliaLang/juliaup) for easy updates and version management. *juliaup* will automatically install the latest stable release of Julia and allows you to manage multiple Julia versions if needed.
-3. To install Julia via *juliaup*, run the following command in your WSL terminal:
+3. To install Julia via *juliaup*, run the following command in your terminal:
    ```sh
    curl -fsSL https://install.julialang.org | sh
    ```
@@ -47,7 +47,7 @@ If you are using macOS 10.12 or newer, you need to install the Xcode command lin
 
 ## Step 3: Install OSCAR
 
-1. Open the Julia REPL in your WSL terminal.
+1. Open the Julia REPL in your terminal.
 2. Install OSCAR by running the following commands:
    ```julia
    using Pkg
