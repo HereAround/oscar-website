@@ -21,7 +21,7 @@
 
             <ul class="submenu">
               {% for subitem in item.submenu %}
-                <li class="{% if page.url == subitem.url %}active{% endif %}">
+                <li class="{% if page.url contains subitem.url %}active{% endif %}">
                   <a href="{% if subitem.url contains 'http' %}{{ subitem.url }}{% else %}{{ site.baseurl }}{{ subitem.url }}{% endif %}" {% if subitem.url contains 'http' %}target="_blank"{% endif %}>
                     {{ subitem.title }}
                   </a>
