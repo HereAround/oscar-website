@@ -3,6 +3,11 @@ layout: page
 title: Installation Instructions for MacOS
 ---
 
+<div style='font-size:smaller; margin-bottom: 1em;'>
+<a href="{{site.baseurl}}/getting-started/install-generic/">Installation instructions for all platforms</a>
+</div>
+
+
 <div class="message">
   <strong>WARNING:</strong>
   The installation process of OSCAR, particularly the precompilation step, requires 

@@ -1,7 +1,12 @@
 ---
 layout: page
-title: Installation Instructions for Fedora
+title: Installation Instructions for Linux
 ---
+
+<div style='font-size:smaller; margin-bottom: 1em;'>
+<a href="{{site.baseurl}}/getting-started/install-generic/">Installation instructions for all platforms</a>
+</div>
+
 
 <div class="message">
   <strong>WARNING:</strong>
@@ -14,12 +19,19 @@ The following instructions assume that you are at least somewhat familiar with u
 
 ## Step 1: Install prerequisites
 
+If you are using Ubuntu 18.04 "Bionic" or newer, or Debian 10 "Buster" or newer, proceed as follows:
+Enter these commands into a terminal (this will prompt for your root password and requires that you
+have permissions to administer your computer):
+```sh
+sudo apt update
+sudo apt install build-essential
+```
+
 If you are using Fedora 28 or newer, enter the following commands into a terminal (this will prompt for your password
 and requires that you have permissions to administer your computer).
 ```sh
 sudo dnf install gcc-c++ make
 ```
-
 
 ## Step 2: Install Julia
 
