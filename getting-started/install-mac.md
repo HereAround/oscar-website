@@ -16,6 +16,8 @@ title: Installation Instructions for MacOS
 
 The following instructions assume that you are at least somewhat familiar with using a terminal interface.
 
+Having trouble? Visit our [Contact & Support]({{site.baseurl}}/contact-and-support/) page to get in touch.
+
 
 ## Step 1: Install prerequisites
 
