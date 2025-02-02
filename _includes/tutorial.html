@@ -1,22 +1,30 @@
-This page contains jupyter notebooks that demonstrate the functionality of the
-OSCAR project.
+<p>
+  This page contains a collection of <a href="https://jupyter.org/">Jupyter notebooks</a> that demonstrate the capabilities of the OSCAR project.
+</p>
 
-For each topic, you can decide to open a static version of the jupyter notebook,
-powered by <a href="https://nbviewer.jupyter.org/">nbviewer</a>. Alternatively,
-you can inspect the jupyter notebook directly on <a
-href="https://github.com/">github</a>.
+<p>
+  To run and interact with a tutorial locally, follow these steps:
+</p>
+<ol>
+  <li>Open the tutorial of your choice in <a href="https://nbviewer.jupyter.org/"><em>nbviewer</em></a>. (Alternatively, you can inspect the notebook directly on <a href="https://github.com/">GitHub</a>.)</li>
+  <li>
+    Click the download icon (located at the top-right corner) and right-click on it (ctrl-click on macOS) to open the context menu.
+  </li>
+  <li>
+    Choose <em>Save As...</em> to download the notebook to your desired directory.
+  </li>
+  <li>
+    Follow the final step in the <a href="{{site.baseurl}}/getting-started/install#step-5-running-tutorials-locally-with-ijulia">installation instructions</a> to set up your local environment.
+  </li>
+</ol>
 
-You can run and interact with each tutorial locally. To this end, select the
-tutorial of your interest below and go to <em>nbviewer</em>.
+<p>
+  Cannot find what you are looking for? Inspect the <a href="https://github.com/micjoswig/oscar-notebooks">polymake examples</a> and <a href="https://github.com/thofma/HeckeTutorials.jl">Hecke examples</a>.
+</p>
 
-Find the download icon (top-right corner) and right-click on it (ctrl-click on
-macOS) to open the context menu. Choose <em>Save Link As...</em> to download the
-notebook to a directory of your choice. Now follow the instructions provided in
-the last step of the [installation instructions]({{site.baseurl
-}}/getting-started/install#step-5-running-tutorials-locally-with-ijulia).
-
-Click on one of the links below to filter notebooks (and re-click to disable
-filtering).
+<p>
+Want to improve or add a tutorial? See our contribution guidelines <a href="{{site.baseurl}}/contributing#contributing-tutorials">here</a>.
+</p>
 
 <div class="example_box">
   {%- for component in site.data.examples_components -%}
@@ -105,20 +113,3 @@ the example, powered by <a href="https://mybinder.org">mybinder</a>.
 </div>
 </details>
 <span class="date">Last updated on {{ site.time | date: '%d-%m-%Y' }}</span>
-
-
-## Seeking more Notebooks?
-
-Have a look at
-  - [polymake examples](https://github.com/micjoswig/oscar-notebooks)
-  - [Hecke examples](https://github.com/thofma/HeckeTutorials.jl)
-
-
-## How to contribute Tutorials
-
-1. Create a jupyter notebook with the desired content.
-2. Place this notebook in a github repository of your choice.
-3. Send the link to this jupyter notebook to [Martin Bies](https://martinbies.github.io/).
-
-Note that **tutorial authors are expected to maintain their tutorial(s)**, so that their
-tutorial notebooks function with the latest stable OSCAR release.
