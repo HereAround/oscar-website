@@ -21,7 +21,7 @@ Having trouble? Visit our [Contact & Support]({{site.baseurl}}/contact-and-suppo
 
 ## Step 1: Install prerequisites
 
-If you are using Ubuntu 18.04 "Bionic" or newer, or Debian 10 "Buster" or newer, proceed as follows:
+If you are using Ubuntu 20.04 "Focal" or newer, or Debian 11 "Bullseye" or newer, proceed as follows:
 Enter these commands into a terminal (this will prompt for your root password and requires that you
 have permissions to administer your computer):
 ```sh
@@ -29,7 +29,7 @@ sudo apt update
 sudo apt install build-essential
 ```
 
-If you are using Fedora 28 or newer, enter the following commands into a terminal (this will prompt for your password
+If you are using Fedora 40 or newer, enter the following commands into a terminal (this will prompt for your password
 and requires that you have permissions to administer your computer).
 ```sh
 sudo dnf install gcc-c++ make
