@@ -1,17 +1,24 @@
 ---
 layout: page
-title: Installation Instructions
 ---
 
+<div class="platform-tabs">
+  <input type="radio" id="mac" name="platform">
+  <label for="mac" onclick="window.location.href='{{site.baseurl}}/getting-started/install-mac/'">Mac</label>
 
-## Platform Specific Instructions
+  <input type="radio" id="windows" name="platform">
+  <label for="windows" onclick="window.location.href='{{site.baseurl}}/getting-started/install-win/'">Windows</label>
 
-- [Install instructions for Linux (Debian, Ubuntu, Fedora)]({{site.baseurl}}/getting-started/install-linux/)
-- [Install instructions for macOS]({{site.baseurl}}/getting-started/install-mac/)
-- [Install instructions for Windows]({{site.baseurl}}/getting-started/install-win/)
+  <input type="radio" id="linux" name="platform">
+  <label for="linux" onclick="window.location.href='{{site.baseurl}}/getting-started/install-linux/'">Linux</label>
+
+  <input type="radio" id="other" name="platform" checked>
+  <label for="other" onclick="window.location.href='{{site.baseurl}}/getting-started/install-generic/'">Other</label>
+</div>
 
 
-## Generic Instructions
+## Generic Installation Instructions
+
 
 We do not provided support for operating systems other than Windows, macOS, and Linux (Debian, Ubuntu, Fedora).
 

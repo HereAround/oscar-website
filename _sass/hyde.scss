@@ -705,3 +705,43 @@ li.active > a {
     text-align: left;
   }
 }
+
+
+
+
+
+
+/* Tab container */
+/* Tab container */
+/* Tab container */
+
+.platform-tabs {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #ccc;
+  padding-bottom: 5px;
+}
+
+/* Individual tab */
+.platform-tabs label {
+  padding: 8px 12px;
+  margin: 0 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border-bottom: 3px solid transparent;
+}
+
+/* Active tab */
+input[name="platform"]:checked + label {
+  color: #E36209; /* Orange highlight */
+  border-bottom: 3px solid #E36209;
+}
+
+/* Hide radio buttons */
+input[name="platform"] {
+  display: none;
+}

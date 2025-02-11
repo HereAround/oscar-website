@@ -1,11 +1,23 @@
 ---
 layout: page
-title: Installation Instructions for Windows
 ---
 
-<div style='font-size:smaller; margin-bottom: 1em;'>
-<a href="{{site.baseurl}}/getting-started/install-generic/">Installation instructions for all platforms</a>
+<div class="platform-tabs">
+  <input type="radio" id="mac" name="platform">
+  <label for="mac" onclick="window.location.href='{{site.baseurl}}/getting-started/install-mac/'">Mac</label>
+
+  <input type="radio" id="windows" name="platform" checked>
+  <label for="windows" onclick="window.location.href='{{site.baseurl}}/getting-started/install-win/'">Windows</label>
+
+  <input type="radio" id="linux" name="platform">
+  <label for="linux" onclick="window.location.href='{{site.baseurl}}/getting-started/install-linux/'">Linux</label>
+
+  <input type="radio" id="other" name="platform">
+  <label for="other" onclick="window.location.href='{{site.baseurl}}/getting-started/install-generic/'">Other</label>
 </div>
+
+
+# Installation Instructions for Windows
 
 
 <div class="message">
