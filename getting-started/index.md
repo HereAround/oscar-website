@@ -11,16 +11,16 @@ title: Getting Started with OSCAR
       <text x="180" y="35" font-size="20" text-anchor="middle" fill="white" font-weight="bold">Installation</text>
     </a>
 
-    <!-- Documentation Button -->
-    <a xlink:href="{{site.baseurl }}/getting-started/documentation/">
-      <rect x="0" y="200" width="140" height="60" rx="15" ry="15" fill="#70AD47"/>
-      <text x="70" y="235" font-size="20" text-anchor="middle" fill="white" font-weight="bold">Documentation</text>
-    </a>
-
     <!-- Tutorials Button -->
     <a xlink:href="{{site.baseurl }}/getting-started/tutorials/">
-      <rect x="220" y="200" width="140" height="60" rx="15" ry="15" fill="#ED7D31"/>
-      <text x="290" y="235" font-size="20" text-anchor="middle" fill="white" font-weight="bold">Tutorials</text>
+      <rect x="0" y="200" width="140" height="60" rx="15" ry="15" fill="#ED7D31"/>
+      <text x="70" y="235" font-size="20" text-anchor="middle" fill="white" font-weight="bold">Tutorials</text>
+    </a>
+
+    <!-- Documentation Button -->
+    <a xlink:href="{{site.baseurl }}/getting-started/documentation/">
+      <rect x="220" y="200" width="140" height="60" rx="15" ry="15" fill="#70AD47"/>
+      <text x="290" y="235" font-size="20" text-anchor="middle" fill="white" font-weight="bold">Documentation</text>
     </a>
 
     <!-- Arrows indicating direction -->
