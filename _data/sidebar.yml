@@ -22,8 +22,6 @@
       url: "/getting-started/tutorials/"
     - title: "Documentation"
       url: "/getting-started/documentation/"
-    - title: "Miscellaneous"
-      url: "/getting-started/miscellaneous/"
 - title: "Contact & Support"
   url: "/contact-and-support/"
 - title: "Contributing"
