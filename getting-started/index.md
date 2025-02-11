@@ -4,8 +4,7 @@ title: Getting Started with OSCAR
 ---
 
 <div style="text-align: center;">
-  <svg width="360" height="270" viewBox="0 0 360 270">
-
+  <svg class="responsive-svg" viewBox="0 0 360 270" preserveAspectRatio="xMidYMid meet">
     <!-- Installation Box -->
     <a xlink:href="{{site.baseurl }}/getting-started/install/">
       <rect x="110" y="0" width="140" height="60" rx="15" ry="15" fill="#4472C4"/>
@@ -35,5 +34,13 @@ title: Getting Started with OSCAR
     </defs>
   </svg>
 </div>
+
+<style>
+  .responsive-svg {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+  }
+</style>
 
 Looking for more? The [OSCAR Book](https://www.oscar-book.org/) offers deeper insights into *OSCAR* beyond the standard documentation.
