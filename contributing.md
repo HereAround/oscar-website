@@ -8,15 +8,6 @@ We welcome contributions!
 All OSCAR project software is available on [GitHub](https://github.com/oscar-system). We recommend [reaching out to us]({{site.baseurl }}/contact-and-support) beforehand to avoid duplicate efforts and discuss design decisions - we are happy to help.
 
 
-## Contributing Tutorials
-
-1. Create a jupyter notebook with the desired content.
-2. Place this notebook in a github repository of your choice.
-3. Send the link to this jupyter notebook to [Martin Bies](https://martinbies.github.io/).
-
-Tutorial authors are responsible for keeping their tutorials compatible with the latest stable OSCAR release.
-
-
 ## Contributing Source Code
 
 To contribute source code, fork the relevant repository from the list below and submit a pull request:
@@ -29,3 +20,12 @@ To contribute source code, fork the relevant repository from the list below and 
 * [Nemo.jl](https://github.com/Nemocas/Nemo.jl) - Wrappers of Flint/Arb/Antic C libraries
 * [Polymake.jl](https://github.com/oscar-system/Polymake.jl) - Polymake interface
 * [Singular.jl](https://github.com/oscar-system/Singular.jl) - Singular interface
+
+
+## Contributing Tutorials
+
+1. Create a jupyter notebook with the desired content.
+2. Place this notebook in a github repository of your choice.
+3. Send the link to this jupyter notebook to [Martin Bies](https://martinbies.github.io/).
+
+Tutorial authors are responsible for keeping their tutorials compatible with the latest stable OSCAR release.
