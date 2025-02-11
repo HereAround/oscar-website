@@ -29,9 +29,9 @@
 - title: "Credits"
   url: "/credits/"
   submenu:
-    - title: "People Credits"
+    - title: "People"
       url: "/credits/contributors/"
-    - title: "Software Credits"
+    - title: "Software"
       url: "/credits/software-credits/"
     - title: "Bibliography"
       url: "/credits/bibliography/"
