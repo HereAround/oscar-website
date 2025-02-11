@@ -11,8 +11,6 @@
       url: "/events/oscar-events/"
     - title: "Satellite"
       url: "/events/satellite-events/"
-    - title: "Talks"
-      url: "/events/talks/"
 - title: "Getting Started"
   url: "/getting-started/"
   submenu:

@@ -11,6 +11,3 @@ The **SFB-TRR 195** is a transregional collaborative research center funded by t
 
 ### [Satellite Events]({{site.baseurl }}/events/satellite-events/)
 These events are not organized by OSCAR but feature talks or sessions relevant to OSCAR users and developers.
-
-### [Talks on OSCAR & Features]({{site.baseurl }}/events/talks/)
-A collection of **talks, presentations, and recorded lectures** showcasing OSCAR and its capabilities.
