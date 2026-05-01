@@ -24,6 +24,7 @@
   repos:
   - Nemocas/AbstractAlgebra.jl
   - Nemocas/Nemo.jl
+  - algebraic-solving/AlgebraicSolving.jl
 - name: Feroz Ahmad
   email: feroz.ahmad.email@gmail.com
   github: Fe-r-oz
@@ -155,6 +156,13 @@
   comment: Co-author of commit 6b2cef5a53b095f3998ba3444cf192ce4fadf797
   repos:
   - oscar-system/Oscar.jl
+- name: Claude
+  email: noreply@anthropic.com
+  status: active
+  comment: Co-author of commit 799bcf80adfc13376d52186e32884295d594d6ba
+  repos:
+  - oscar-system/Oscar.jl
+  - thofma/Hecke.jl
 - name: Andrei Comaneci
   affiliation: TU Berlin
   email: comenaci@math.tu-berlin.de
@@ -162,6 +170,12 @@
   website: https://page.math.tu-berlin.de/~comaneci/
   status: retired
   repos: []
+- name: Copilot
+  email: 175728472+Copilot@users.noreply.github.com
+  status: active
+  comment: Co-author of commit f5e15476cd4ef195d5061939439bd8a3916083ee
+  repos:
+  - oscar-system/Oscar.jl
 - name: Wolfram Decker
   affiliation: University of Kaiserslautern-Landau
   email: wolfram.decker@rptu.de
@@ -175,13 +189,21 @@
   email: asdemin_2@edu.hse.ru
   github: sumiya11
   website: https://sumiya11.github.io/
-  status: retired
-  repos: []
+  status: active
+  repos:
+  - Nemocas/AbstractAlgebra.jl
+- name: Andy Dienes
+  email: 51664769+adienes@users.noreply.github.com
+  github: adienes
+  status: active
+  repos:
+  - oscar-system/Oscar.jl
+  - thofma/Hecke.jl
 - name: Berenike Dieterle
   affiliation: University of Kaiserslautern-Landau
   email: dieterle@mathematik.uni-kl.de
   github: BD-00
-  status: active
+  status: retired
   comment: Master student of Claus Fieker as of 2024
   aka_email:
   - 94169337+BD-00@users.noreply.github.com
@@ -541,7 +563,7 @@
   email: luber@math.tu-berlin.de
   github: danteluber
   website: https://sites.google.com/view/dantelubermath/home
-  status: active
+  status: retired
   repos:
   - oscar-system/Oscar.jl
 - name: Eoin Mackall
@@ -630,6 +652,12 @@
   status: active
   repos:
   - Nemocas/Nemo.jl
+- name: Niranjan Nagumalli
+  email: 87712842+niranjannagumalli@users.noreply.github.com
+  github: niranjannagumalli
+  status: active
+  repos:
+  - oscar-system/Oscar.jl
 - name: James Nohilly
   affiliation: University of Kaiserslautern-Landau
   github: jamesnohilly
@@ -647,6 +675,18 @@
   - 133787190+stefnomden@users.noreply.github.com
   repos:
   - thofma/Hecke.jl
+- name: Gabriel Ong
+  email: gabriel_ong@ieee.org
+  status: active
+  comment: Co-author of commit 2391d9bd23c7bf92be3f2344e1c9887218cc1dc0
+  repos:
+  - oscar-system/Oscar.jl
+- name: Gabriel Ong
+  email: gabrielong2312@gmail.com
+  status: active
+  comment: Co-author of commit 2391d9bd23c7bf92be3f2344e1c9887218cc1dc0
+  repos:
+  - oscar-system/Oscar.jl
 - name: Raphaël Paegelow
   affiliation: University of Lille
   email: raphael.paegelow@univ-lille.fr
@@ -736,6 +776,7 @@
   website: https://www.yueren.de/
   status: active
   repos:
+  - Nemocas/AbstractAlgebra.jl
   - oscar-system/Oscar.jl
   - thofma/Hecke.jl
 - name: Morgan Rodgers
@@ -763,6 +804,12 @@
   status: retired
   repos:
   - Nemocas/AbstractAlgebra.jl
+- name: Kamal Saleh
+  email: kamal.saleh@web.de
+  github: kamalsaleh
+  status: active
+  repos:
+  - oscar-system/Singular.jl
 - name: Marcel Salmon
   affiliation: Universität Oldenburg
   github: Syz-MS
@@ -770,6 +817,7 @@
   comment: Associated with Anne Fruhbig Kruger as of 2024
   repos:
   - oscar-system/Oscar.jl
+  - oscar-system/Singular.jl
 - name: Sami-Halaseh
   email: samihalaseh14@pm.me
   github: Sami-Halaseh
@@ -880,7 +928,7 @@
   affiliation: University of Kaiserslautern-Landau
   github: ulthiel
   website: https://ulthiel.com/math/
-  status: active
+  status: retired
   repos:
   - oscar-system/Oscar.jl
 - name: Jan Philipp Thiele
@@ -973,7 +1021,9 @@
   website: https://weijia.perso.lip6.fr
   status: active
   repos:
+  - Nemocas/AbstractAlgebra.jl
   - Nemocas/Nemo.jl
+  - algebraic-solving/AlgebraicSolving.jl
 - name: Lena Weis
   affiliation: TU Berlin
   email: weis@math.tu-berlin.de
@@ -985,15 +1035,16 @@
 - name: Karl Wessel
   email: wessel.karl@googlemail.com
   github: karlwessel
-  status: retired
+  status: active
   repos:
+  - Nemocas/AbstractAlgebra.jl
   - Nemocas/Nemo.jl
 - name: Torben Wiedemann
   affiliation: University of Kaiserslautern-Landau
   email: torben.wiedemann@rptu.de
   github: TWiedemann
   website: https://math.rptu.de/ags/agag/personen/mitglieder
-  status: active
+  status: retired
   repos:
   - oscar-system/Oscar.jl
 - name: Yichao Yu
@@ -1026,6 +1077,12 @@
   status: active
   repos:
   - thofma/Hecke.jl
+- name: bpiroddi
+  email: 270620104+bpiroddi@users.noreply.github.com
+  github: bpiroddi
+  status: active
+  repos:
+  - oscar-system/Oscar.jl
 - name: matthias314
   email: 56549971+matthias314@users.noreply.github.com
   github: matthias314
